@@ -1,0 +1,33 @@
+
+.home-container {
+  height: 100vh;
+  width: 100%;
+  padding: 6rem 2rem 2rem 2rem;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes flickerAnimation {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
